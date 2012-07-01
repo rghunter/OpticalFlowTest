@@ -1,0 +1,16 @@
+****************************
+* Optical Flow Test
+* Ryan Hunter <rghunter@bu.edu>
+* Boston University Intelligent Mechatronics Lab
+****************************
+
+Description:
+
+This application provides camaera de warping and feature flow. Currently, I am using a lucas-kanade implementation to provide sparse optical flow
+using derived features from the goodFeaturesToTrack function and cornerSubPix for refinement.
+
+Usage:
+
+$ OpticalFlow <calibration_file> <input_file> <output_file>
+
+If you do not provide an input or output file, the application uses index zero to grab a local video source and displays output on the screen.
